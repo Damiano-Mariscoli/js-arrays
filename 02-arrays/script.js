@@ -21,6 +21,7 @@ console.log(longNames)
 
 // 3. Rimuovi 'Ed' dall'array teachers
 edIndex = teachers.indexOf('Ed')
-console.log(edIndex)
-const removeEd = teachers.toSpliced(edIndex , 1)
-console.log(removeEd)
+if (edIndex >= 0) {
+  teachers.splice(edIndex , 1)
+}
+console.log(teachers)
